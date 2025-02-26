@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: "Poppins", serif;
+    /* border: .1rem solid white; */
+}
+:root
+{
+    --green-clr:#DFFE02;
+    --grey-clr:#898989;
+    --dark-blue-clr:#171C22;
+}
+.navbar-logo{
+    width: 2rem;
+}
+.wel{
+      border: 0 .1rem 0 .1rem;
+    width: 50rem;
+    height: fit-content;
+    margin: 3rem 3rem 3rem 10rem;
+    background-color: #671a64;
+    color: aqua;
+    border-start-end-radius: 30rem;
+    border-end-start-radius:30rem;
+    border-start-start-radius:30%;
+    border-end-end-radius: 30%;
+   
+}
+
+.wel:hover{
+    
+    border-start-end-radius: 30%;
+    border-end-start-radius:30%;
+    border-start-start-radius:30rem;
+    border-end-end-radius: 30rem;
+    background-color: #d7f309;
+    color: rgb(25, 26, 25);
+}
+
+.bg-green{
+    background: var(--green-clr) ;
+}
+
+.bg-dark-blue{
+    background: var(--dark-blue-clr);
+}
+
+.txt-green{
+    color:var(--green-clr) ;
+}
+.txt-grey{
+   color:var(--grey-clr) ; 
+}
+
+/* ============== nevbar ==================== */
+li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+}
+ img
+ {
+    max-width: 100%;
+    height: auto;
+ }
+
+.mybtn{
+    padding: .5rem 1.6rem;
+    border:.1rem solid var(--green-clr) !important ;
+}
+.mybtn:hover{
+ background: transparent; 
+ color: var(--green-clr) !important;
+}
+.navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 255, .3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+width: 2.2rem;
+}
+
+.nav-link
+{
+    padding: .1rem;
+}
+.nav-link:hover{
+    color: blue;
+    background-color: rgb(68, 51, 79);
+}
+/* ===================Hero section========================= */
+.image-container
+{
+ 
+  width: 25rem;
+  aspect-ratio: 1;
+  border-radius:50%;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
+  background-image: url("assets/IMG_20250213_204000_587 - Copy_1 (1).jpg");
+  background-position: center;
+  background-size:85%;
+  box-shadow:  
+  0 0 1rem white,
+  inset 0 0 1rem white,
+  0 0 2rem var(--green-clr),
+ inset 0 0 2rem var(--green-clr),
+ 0 0 3rem var(--green-clr),
+ inset 0 0 3rem var(--green-clr);
+}
+.hero-section{
+   min-height:88vh ;
+   padding-block: 4rem;
+}
+h1{
+    font-size:4rem ;
+    font-family: "Merriweather Sans", serif;
+}
+p
+{
+  font-size: .95rem;  
+}
+.para{
+    max-width: 500px;
+}
+.main-txt{
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+
+.section-container{
+  padding-block: 4rem;  
+  
+}
+/* ==============About me ssectuon=============== */
+
+.about_me img
+{   
+    width:90%;
+    border-radius:50%;
+
+  
+}
+
+.glow
+{
+    position:  relative;
+   
+}
+.glow::before
+{
+content: "";
+background: var(--green-clr);
+position: absolute;
+inset:4rem;
+border-radius:50%;
+z-index:-1;
+filter:blur(70px);
+
+}
+
+.hover-card:hover{
+ background: var(--green-clr) !important;   
+}
+
+.hover-card:hover *{
+color:black !important;
+}
+
+.mycard{
+    width:30rem;
+    display: block;
+    border: .1rem dotted #add;
+    transition: all 0.3s ease;
+    max-width: 30rem;
+    padding:2rem;
+    margin:3rem;
+}
+
+/* ==============contact================ */
+/* .containerc{
+    border: .1rem  double rgb(104, 106, 106);
+    margin: .1rem;
+    margin-bottom: 0;
+} */
+
+.contact-link a
+{
+    color: gold;
+}
+/* .contact-container
+{
+    border: .1rem solid rgb(28, 155, 155);
+    margin: .05rem;  
+} */
+
+
+.contact-link a:hover
+{
+    color: rgb(231, 13, 13);
+    background-color: var(--green-clr);
+}
+
+/* .footer
+{
+    border:.01rem dotted #898989 ;
+    margin: 3rem;
+} */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:680px){
+    h1{
+        font-size: 2.8rem;
+    }
+    .image-cntainer{
+        width: 20rem;
+    }
+    .hero-section{
+      min-height:75vh ;  
+    }
+    .about_me
+    {
+        width: 23rem;
+    }
+    .mycard
+    {
+        width: 31rem;
+    }
+
+    .contact-container{
+        width: 25rem;
+        padding-left: 3rem;
+    }
+}
